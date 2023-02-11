@@ -4,4 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
   }
+  li {
+    list-style: none;
+  }
 `
