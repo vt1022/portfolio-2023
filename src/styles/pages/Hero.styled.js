@@ -28,6 +28,6 @@ export const SocialsContainer = styled.ul`
   }
 
   i {
-    font-size: 20px;
+    font-size: 28px;
   }
 `

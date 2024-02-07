@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import breakpoints from '../../utils/breakpoints'
 
 export const StyledPortfolio = styled.section`
   .container {
@@ -14,16 +15,6 @@ export const Card = styled.div`
   grid-template-rows: repeat(3, 1fr);
   position: relative;
 
-  img {
-    position: relative;
-    z-index: -1;
-    grid-column: 3 / span 999;
-    grid-row: 1 / span 3;
-    border-radius: 1%;
-    width: 100%;
-    /* filter: opacity(0.2); */
-  }
-
   .info {
     padding: 0 10px;
     grid-column: 1 / span 2;
@@ -31,15 +22,35 @@ export const Card = styled.div`
     text-align: left;
   }
 
+  .mock {
+    position: relative;
+    z-index: -1;
+    grid-column: 3 / span 999;
+    grid-row: 1 / span 3;
+    border-radius: 1%;
+    width: 100%;
+  }
+
   .stack {
     display: flex;
     margin-top: 1em;
     height: 40px;
+  }
 
-    img {
-      margin-right: 10px;
-      height: 100%;
-      width: auto;
+  .skill-icon {
+    margin-right: 10px;
+    height: 100%;
+    width: auto;
+  }
+
+  @media ${breakpoints.s} {
+    .info {
+      grid-row: 4;
+      grid-column: span 99;
+    }
+
+    .mock {
+      grid-column: 1 / span 6;
     }
   }
 `

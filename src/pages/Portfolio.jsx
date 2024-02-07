@@ -12,22 +12,24 @@ function Portfolio() {
             <Card key={i}>
               <div className='info'>
                 <h3>{title}</h3>
-                <a target='_blank' rel='noopener' href={live} aria-label={`${title} demo`}>
-                  demo
-                </a>{' '}
-                .{' '}
-                <a target='_blank' rel='noopener' href={repo} aria-label={`${title} code`}>
-                  github
-                </a>
-                <p>{desc}</p>
+                <div className='links'>
+                  <a target='_blank' rel='noopener' href={live} aria-label={`${title} demo`}>
+                    demo
+                  </a>{' '}
+                  .{' '}
+                  <a target='_blank' rel='noopener' href={repo} aria-label={`${title} code`}>
+                    github
+                  </a>
+                </div>
+                <p className='description'>{desc}</p>
                 <div className='stack'>
-                  {skills.map(skill => (
-                    <img src={skill} loading='lazy' />
+                  {skills.map((skill, i) => (
+                    <img key={i} className='skill-icon' src={skill} loading='lazy' />
                   ))}
                 </div>
               </div>
 
-              <img src={image} alt='' loading='lazy' />
+              <img className='mock' src={image} alt='' loading='lazy' />
             </Card>
           )
         })}
