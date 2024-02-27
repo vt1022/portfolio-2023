@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import breakpoints from '../../utils/breakpoints'
 
 export const StyledPortfolio = styled.section`
+  padding-top: 30px;
+
   .container {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */

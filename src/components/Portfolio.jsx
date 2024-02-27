@@ -1,10 +1,10 @@
 import React from 'react'
-import { Card, StyledPortfolio } from '../styles/pages/Portfolio.styled'
+import { Card, StyledPortfolio } from '../styles/components/Portfolio.styled'
 import projects from '../utils/projects'
 
 function Portfolio() {
   return (
-    <StyledPortfolio>
+    <StyledPortfolio id='projects'>
       {/* <h3>Portfolio</h3> */}
       <div className='container'>
         {projects.map(({ title, live, repo, desc, image, skills }, i) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledFooter } from '../styles/pages/Footer.styled'
+import { StyledFooter } from '../styles/components/Footer.styled'
 import footerImage from '../assets/rx78.png'
 
 function Footer() {

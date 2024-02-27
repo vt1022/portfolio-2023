@@ -1,5 +1,5 @@
 import React from 'react'
-import { SocialsContainer, StyledHero } from '../styles/pages/Hero.styled'
+import { SocialsContainer, StyledHero } from '../styles/components/Hero.styled'
 
 function Hero() {
   return (
@@ -12,6 +12,7 @@ function Hero() {
         I am a (frontend) engineer on a mission to harmonize performance, design and functionality to create experiences that
         truly stand out.
       </p>
+      <p>I have experience with McDonald's and other QSR digital menu boards and E-commerce websites.</p>
 
       {/* <iframe
         title={'test'}
@@ -23,7 +24,7 @@ function Hero() {
         height={`${1080 / 2}px`}
       /> */}
 
-      <SocialsContainer>
+      <SocialsContainer id='socials'>
         <li className='button'>
           <a target='_blank' rel='noopener' href='mailto:vincci.tsui22@gmail.com' aria-label='email me'>
             <i className='fa-solid fa-at' />

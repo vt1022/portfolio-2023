@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledHero = styled.section`
-  margin: 0 auto 2em;
+  margin: 2em auto;
   max-width: 380px;
 
   h1 {
@@ -21,7 +21,8 @@ export const StyledHero = styled.section`
 export const SocialsContainer = styled.ul`
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  padding-top: 30px;
+  margin: 0 0 20px;
 
   .button {
     width: 60px;
