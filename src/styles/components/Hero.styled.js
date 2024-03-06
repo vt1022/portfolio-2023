@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledHero = styled.section`
-  margin: 2em auto;
+  margin: 2em auto 1em;
   max-width: 380px;
 
   h1 {
@@ -15,20 +15,5 @@ export const StyledHero = styled.section`
 
   .hidden {
     display: none;
-  }
-`
-
-export const SocialsContainer = styled.ul`
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
-  margin: 0 0 20px;
-
-  .button {
-    width: 60px;
-  }
-
-  i {
-    font-size: 28px;
   }
 `

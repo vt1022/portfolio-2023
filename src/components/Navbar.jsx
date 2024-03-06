@@ -1,17 +1,19 @@
 import React from 'react'
 import { StyledNavbar } from '../styles/components/Navbar.styled'
 
-function Navbar() {
+function Navbar({ inView }) {
+  // inView: 'home' / 'socials' / 'portfolio'
+
   return (
     <StyledNavbar>
       <ul>
-        <li className='nav-btn btn'>
+        <li className={`nav-btn btn ${inView === 'home' ? 'active' : ''}`}>
           <a href='#'>Home</a>
         </li>
-        <li className='nav-btn btn'>
+        <li className={`nav-btn btn ${inView === 'socials' ? 'active' : ''}`}>
           <a href='#socials'>Socials</a>
         </li>
-        <li className='nav-btn btn'>
+        <li className={`nav-btn btn ${inView === 'portfolio' ? 'active' : ''}`}>
           <a href='#projects'>Projects</a>
         </li>
       </ul>

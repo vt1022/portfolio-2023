@@ -2,9 +2,9 @@ import React from 'react'
 import { Card, StyledPortfolio } from '../styles/components/Portfolio.styled'
 import projects from '../utils/projects'
 
-function Portfolio() {
+function Portfolio({ forwardRef }) {
   return (
-    <StyledPortfolio id='projects'>
+    <StyledPortfolio id='projects' ref={forwardRef}>
       {/* <h3>Portfolio</h3> */}
       <div className='container'>
         {projects.map(({ title, live, repo, desc, image, skills }, i) => {
