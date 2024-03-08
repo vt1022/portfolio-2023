@@ -1,11 +1,13 @@
 import React from 'react'
 import { StyledNavbar } from '../styles/components/Navbar.styled'
+import icon from '../assets/favicon.png'
 
 function Navbar({ inView }) {
   // inView: 'home' / 'socials' / 'portfolio'
 
   return (
     <StyledNavbar>
+      <div className='title'>vincci</div>
       <ul>
         <li className={`nav-btn btn ${inView === 'home' ? 'active' : ''}`}>
           <a href='#'>Home</a>
